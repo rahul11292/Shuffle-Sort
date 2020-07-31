@@ -1,0 +1,157 @@
+body {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-style: italic;
+    text-align: center;
+}
+
+#blockContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    width: 85%
+}
+
+.Blocks {
+    width: 32%;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 22px;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 5px solid #bfbfbf;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+    margin: 0px;
+}
+
+.buttons {
+    width: 15%;
+    text-align: center;
+    margin-right: 35px;
+    margin-top: 40px;
+}
+
+.buttons button {
+    outline: none;
+    background-color: #72c3dc;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #2b8ead;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #2b8ead;
+}
+
+.gridColor1 {
+    background-color: #2B8EAD;
+}
+
+.gridColor2 {
+    background-color: #6F98A8;
+}
+
+.gridColor3 {
+    background-color: #2F454E;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+
+/* Change Screen format below 678 */
+
+@media screen and (max-width: 678px) {
+    body {
+        background-color: white;
+    }
+    .heading {
+        text-align: center;
+        font-size: 22px;
+        background-color: #333333;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0px;
+        width: 100%;
+        border-bottom: none;
+        color: white
+    }
+    #blockContainer {
+        display: inline-block;
+        width: 80%;
+    }
+    h1 {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0px;
+        padding: 7px;
+        text-align: center;
+    }
+    .Blocks {
+        width: 100%;
+        text-align: center;
+        background-color: #efefef;
+        margin-bottom: 5px;
+    }
+    .container {
+        display: block;
+        text-align: center;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 70%;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .buttons button {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .gridColor1 {
+        border-left: 7px solid #2B8EAD;
+    }
+    .gridColor2 {
+        border-left: 7px solid #6F98A8;
+    }
+    .gridColor3 {
+        border-left: 7px solid #2F454E;
+    }
+}
